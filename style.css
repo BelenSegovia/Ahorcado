@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(241, 222, 214);
+    margin: 0px;
+}
+
+html {
+    font-size: 16px;
+}
+
+#hombre {
+    max-width: 100%;
+    max-height: 100%;
+    width: 17rem;
+    height: 17rem;
+    border: solid 1px #777;
+    background-image: #ddd;
+    display: inline-block;
+}
+
+.hombre-ahorcado {
+    width: 100vw;
+    text-align: center;
+    margin-top: 6.8rem;
+    margin-bottom: 6rem;
+    
+}
+
+.adivinado {
+    text-align: center;
+}
+
+.letra-adivinada {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(223, 85, 39);
+}
