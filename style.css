@@ -1,6 +1,32 @@
+header {
+    padding: 20px 0;
+    width: 100%;
+}
+main {
+    margin: auto;
+    width: 940px;
+    height: 650px;
+    padding: 5px;
+}
+.caja {
+    width: 100%;
+    float: left;
+}
+.logo {
+    margin-top: 1%;
+    margin-left: 18%;
+    float: inherit;
+}
+.titulo {
+    margin-top: 1%;
+    margin-left: 15%;
+    float: inherit;
+    color: #df5527;
+}
 body {
-    background-color: rgb(241, 222, 214);
     margin: 0px;
+    padding: 0px;
+    background-color: #fceee9;
 }
 
 html {
@@ -8,12 +34,11 @@ html {
 }
 
 #hombre {
+    text-align: center;
     max-width: 100%;
     max-height: 100%;
     width: 17rem;
     height: 17rem;
-    border: solid 1px #777;
-    background-image: #ddd;
     display: inline-block;
 }
 
@@ -27,14 +52,64 @@ html {
 
 .adivinado {
     text-align: center;
+    margin-top: 1rem;
+    color: rgb(68, 45, 37);
 }
 
-.letra-adivinada {
+.letra{
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
     vertical-align: middle;
     text-align: center;
+}
+
+.adivinada {
+    width: 5rem;
+    height: 5rem;
     font-size: 2rem;
-    color: rgb(223, 85, 39);
+    color: #df5527;
+    border-bottom: solid 1px #df5527;
+    margin-left: 0.5rem;
+    line-height: 7rem;
+}
+
+.errado {
+    text-align: center;
+    margin-top: 1.3rem;
+    color: rgb(68, 45, 37);
+    margin-left: 1rem;
+}
+
+.errada {
+    margin-left: 1rem;
+}
+
+[type="button"] {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #df5527;
+    color: #df5527;
+    cursor: pointer;
+    background-color: inherit;
+    font-weight: bold;
+}
+
+.btn-rosa{
+    background-color: #df5527;
+    color: #fff;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 40px;
 }

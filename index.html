@@ -15,36 +15,37 @@
 <body>
     <header> 
         <div class="caja">
-            <img src="imagenes/Vector-rosa.png" class="logo">
+            <img src="imagenes/Vector-rosa.png" alt="a" class="logo">
             <h1 class="titulo">Juego del Ahorcado</h1>
         </div>
     </header>
     <main class=> 
         <section >
            <div class="hombre-ahorcado">
-               <img id="hombre" alt="hombre-ahorcado">
+               <img id="hombre" alt="hombre-ahorcado" src="imagenes/estados/07.png" >
            </div>
            <div class="adivinado">
-           <span class="letra-adivinada">A</span>
-           <span class="letra-adivinada">L</span>
-           <span class="letra-adivinada"></span>
-           <span class="letra-adivinada"></span>
-           <span class="letra-adivinada">A</span>
-            </div>
+             <span class="letra adivinada">A</span>
+              <span class="letra adivinada">L</span>
+              <span class="letra adivinada"></span>
+              <span class="letra adivinada"></span>
+              <span class="letra adivinada">A</span>
+           </div>
            <div class="errado">
-           <span>B</span>
-           <span>J</span>
-           <span>K</span>
-           <span>C</span>
-           <span></span>
-            </div>
+             <span class="letra errada">B</span>
+             <span class="letra errada">J</span>
+             <span class="letra errada">K</span>
+             <span class="letra errada">C</span>
+             <span class="letra errada"></span>
+           </div>
            <div class="botones">
-            <input type="button" value="Nuevo juego">
-            <input type="button" value="Desistir">
+              <input type="button" class="btn-rosa" value="Nuevo juego">
+              <input type="button" value="Desistir">
            </div>
         </section>
     </main>
-    <footer >  
+    <footer class="present">
+        <p class=" copyright">&copy Challenge ORACLE-ONE creado por Erika Belén Segovia.</p>
     </footer>
     <script src="./app.js"></script>
 </body>
