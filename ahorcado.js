@@ -1,11 +1,21 @@
 ;(function name(){
     'use strict'
-    var juego = {
-        palabra: "ALURA",
-        estado: 7,
-        adivinado: ["A", "L"],
-        errado: ["B", "J", "K", "C"]
-    }
+
+var palabras = [
+    "ALURA", 
+    "ORACLE",
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "CHALLENGE",
+    "PROGRAMAR",
+    "ARGENTINA"
+]
+
+// variable para almacenar la configuracion actual
+    var juego = null
+    // para ver si ya se envió alguna alerta
+    var finalizado = false
 
     var $html= {
     hombre: document.getElementById('hombre'),
@@ -100,8 +110,43 @@
             return
         }
         adivinar(juego, letra)
+        var estado = juego.estado
+        if (estado === 8 && !finalizado) {
+            setTimeout(alertaGanaste, 500)
+            finalizado = true
+        } else if (estado === 1 && !finalizado) {
+            let palabra = juego.palabra
+            let fn = alertaPerdiste.bind(undefined, palabra)
+            setTimeout(fn, 500)
+            finalizado = true
+        }
         dibujar(juego)
      }
 
-    dibujar(juego)
+     window.nuevoJuego = function nuevoJuego() {
+        var palabra = palabraAleatoria()
+        juego = {}
+        juego.palabra= palabra
+        juego.estado = 7
+        juego.adivinado= []
+        juego.errado= []
+        finalizado = false
+        dibujar(juego)
+        console.log(juego)
+     }
+
+     function palabraAleatoria () {
+        var index = ~~(Math.random() * palabras.length)
+        return palabras[index]
+     }
+
+     function alertaGanaste () {
+        alert("¡Felicidades, ganaste el juego!")
+     }
+
+     function alertaPerdiste (palabra) {
+        alert ("Lo siento, perdiste... La palabra era: " + palabra)
+     }
+
+     nuevoJuego()
 }())
