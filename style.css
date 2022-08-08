@@ -101,12 +101,70 @@ html {
     margin-top: 3rem;
 }
 
+.boton-ahorcado {
+    width: 15rem;
+    padding: 1rem;
+    font-size: 20px;
+    color: #df5527;
+    cursor: pointer;
+    background-color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+.important {
+    font-family: verdana, arial !important;
+}
 
+.inicio {
+    margin-top: 12%;
+    margin-left: 38%;
+    padding: 2rem;
+    float: inherit;
+}
+.palabraAgregar {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 1px;
+    padding: 50px 10px;
+    width: 100%;
 
+}
+.agregar-palabra {
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    max-height: 25rem;
+}
+.desistir {
+    width: 15rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 1rem;
+    border: solid 1px #df5527;
+    color: #df5527;
+    cursor: pointer;
+    background-color: inherit;
+    font-weight: bold;
+    text-decoration: none;
 
+}
+.iniciob{
+    margin-top: 7rem;
+    text-align: center;
+}
+.palabraNueva{
+    border-radius: 1rem;
+    border: solid 1px #df5527;
+    padding: 1rem;
+    color: #df5527;
+    cursor: pointer;
+    margin-top: 45%;
+    float: inherit;
+    font-weight: bold;
+    text-decoration: none;
 
+}
 footer {
     text-align: center;
-    padding: 40px;
 }
